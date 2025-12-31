@@ -5,13 +5,15 @@
 [![UI Framework](https://img.shields.io/badge/UI-PyQt5-green.svg)](https://pypi.org/project/PyQt5/)
 [![Deep Learning](https://img.shields.io/badge/AI-YOLO-purple.svg)](https://ultralytics.com/)
 
-**EthoGrid-ToxMate** is a specialized, high-performance desktop application engineered for researchers working with large-volume behavioral data, such as 24-hour recordings from automated systems like **ToxMate**. It provides a massively accelerated, end-to-end workflow to take you from raw, multi-hour videos to final, publication-ready statistical reports and graphs in a fraction of the time. Every stage of the EthoGrid-ToxMate pipeline is designed to be **transparent, customizable, and efficient**, giving you full scientific control over your high-throughput data.
+**EthoGrid-ToxMate** is a specialized, high-performance desktop application engineered for researchers working with large-volume behavioral data, such as 24-hour recordings from automated systems like **ToxMate**. It provides a massively accelerated, end-to-end workflow to take you from raw, multi-hour videos to final in a fraction of the time.
+
+Every stage of the EthoGrid-ToxMate pipeline is designed to be **transparent, customizable, and efficient**, giving you full scientific control over your high-throughput data.
 
 <p align="center">
-  <img src="https://github.com/yousaf2018/EthoGrid_Toxmate/blob/main/images/android-chrome-512x512.png" alt="EthoGrid-ToxMate Logo" width="200">
+  <img src="https://github.com/yousaf2018/EthoGrid-Toxmate/blob/main/images/android-chrome-512x512.png" alt="EthoGrid-ToxMate Logo" width="200">
 </p>
 
-![Tool Overview](https://github.com/yousaf2018/EthoGrid_Toxmate/blob/main/images/EthoGridGUI.png)
+![Tool Overview](https://raw.githubusercontent.com/yousaf2018/EthoGrid/main/images/EthoGridGUI.png)
 *A snapshot of the EthoGrid-ToxMate interface showing a video with an overlaid grid, detections with centroids, a behavior legend, and a multi-tank timeline.*
 
 ---
@@ -24,8 +26,6 @@ Designed specifically to address the challenges of long-duration recordings, Eth
 1.  **High-Speed Video Preparation**: Automatically split massive 24-hour recordings into manageable 1-hour chunks with a single click, preserving original quality without slow re-encoding.
 2.  **GPU-Accelerated AI Tracking**: Run high-performance YOLO models using an optimized process that maximizes GPU utilization, generating tracking data at high speeds.
 3.  **Rapid Annotation & Cleaning**: Interactively align a virtual grid to your experimental setup once, then apply it to hundreds of video segments automatically in a powerful batch processing workflow.
-4.  **Interactive Endpoint Calculation**: Compute a rich set of scientific endpoints with a powerful interactive tool. Visually validate and fine-tune parameters like the true center of each tank before running the final batch analysis.
-5.  **One-Click Statistical Analysis**: Perform a full suite of statistical tests (T-test, ANOVA, Mann-Whitney, etc.) across multiple custom-named experimental groups and all relevant endpoints simultaneously, generating a folder of publication-quality plots and a consolidated data report with a single click.
 
 ---
 
@@ -44,7 +44,7 @@ Designed specifically to address the challenges of long-duration recordings, Eth
 
 ## Key Features
 
--   **Optimized for High-Throughput**: Every module, from video splitting to statistical analysis, is designed to work in batch mode on large numbers of files, saving countless hours of manual work.
+-   **Optimized for High-Throughput**: Every module, from video splitting to annotated videos, is designed to work in batch mode on large numbers of files, saving countless hours of manual work.
 -   **High-Performance Processing**:
     -   **YOLO Inference**: Automatically detects and utilizes NVIDIA GPUs for massive speed improvements, with a graceful fallback to CPU.
     -   **Video Resizing**: Leverages NVIDIA GPU hardware acceleration (`h264_nvenc`) for extremely fast video downscaling.
@@ -56,14 +56,6 @@ Designed specifically to address the challenges of long-duration recordings, Eth
     -   Filter detections within each tank to keep only the highest-confidence animal per frame.
 -   **Comprehensive Data Export**:
     -   Generate annotated videos, trajectory plots, heatmaps, and multiple data formats (`.csv`, `.xlsx`).
--   **Interactive & Customizable Endpoints Analysis**:
-    -   A dedicated module for calculating behavioral endpoints with visual validation.
-    -   **Flexible Analysis Modes**: Switch between "Top View" and "Side View" modes with different parameters and endpoint calculations.
-    -   **Per-Tank Customization**: Define different zone division axes for each individual tank to handle complex camera angles.
--   **Publication-Ready Statistical Analysis**:
-    -   **Intelligent Test Selection**: Automatically performs normality tests and selects the appropriate significance test (T-test/ANOVA vs. Mann-Whitney/Kruskal-Wallis).
-    -   **Full User Control**: Override automatic test selection and customize every aspect of your plots (colors, fonts, sizes, error bars, mean/median).
-    -   **"Analyze All" Functionality**: Analyze all selected endpoints across multiple custom-named experimental groups with a single click.
 
 ---
 
@@ -83,9 +75,6 @@ This workflow demonstrates how to go from a raw video to a final statistical gra
 2.  **Generate Tracking Data**: Use **🎨 Run YOLO Segmentation...** to run your trained model on the video segments. This produces a raw `_segmentations.csv` file for each.
 3.  **Annotate Data**: In the main window, **🎬 Load** a sample video and the corresponding `_segmentations.csv`. Interactively create and align the grid, then **💾 Save Settings** to a `grid.json` file.
 4.  **Batch Process**: Use **🚀 Batch Annotation...** to apply your saved `grid.json` to all your video segments and their `_segmentations.csv` files. This will generate the final, clean `_with_tanks.csv` files.
-5.  **Calculate Endpoints**: Use **📈 Run Analysis...** to process your `_with_tanks.csv` files. In this interactive dialog, you can fine-tune tank centers and other parameters, then run the analysis to produce a `consolidated_endpoints.xlsx` file.
-6.  **Perform Statistics**: Use **📊 Statistical Analysis...** to load your `consolidated_endpoints.xlsx` files, assign them to Control and Treatment groups, select the endpoints you want to compare, and run the analysis. The result is a folder of publication-quality plots and a final statistical report.
-
 ---
 ## Documentation
 
@@ -108,20 +97,7 @@ For a deeper dive into the application's architecture and methods, please see th
     -   `{video_name}_trajectory.png`: A high-quality image plotting the centroid paths.
     -   `{video_name}_heatmap.png`: A high-quality heatmap image superimposed on the video's first frame.
     -   `{video_name}_annotated.mp4`: A clean final video, with or without overlays.
-3.  **From Endpoints Analysis**:
-    -   `{video_name}_endpoints.csv`: A CSV file containing all calculated behavioral endpoints for each tank.
-
 ---
-
-## Documentation
-
-For a deeper dive into the application's architecture and methods, please see the following guides:
-
--   **[Developer's Guide & Code Architecture](DEVELOPER_GUIDE.md)**: A comprehensive overview of the project structure, class responsibilities, and data flow. Essential reading for anyone looking to modify or contribute to the codebase.
--   **[Statistical Analysis Guide](STATISTICAL_ANALYSIS_GUIDE.md)**: A detailed explanation of every statistical test and calculation performed by the analysis module, including the formulas used and their scientific purpose.
-
----
-
 
 ## Contributing
 
@@ -151,10 +127,6 @@ This application was developed in the **[Laboratory of Professor Chung-Der Hsiao
 
 
 Distributed under the MIT License. See the `LICENSE` file for more information.
-
-
-
-
 
 
 
