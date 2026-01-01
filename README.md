@@ -1,27 +1,27 @@
-# EthoGrid-ToxMate: High-Speed Behavioral Analysis for Large-Volume Data
+# EthoGrid_ToxMate: High-Speed Behavioral Analysis for Large-Volume Data
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![UI Framework](https://img.shields.io/badge/UI-PyQt5-green.svg)](https://pypi.org/project/PyQt5/)
 [![Deep Learning](https://img.shields.io/badge/AI-YOLO-purple.svg)](https://ultralytics.com/)
 
-**EthoGrid-ToxMate** is a specialized, high-performance desktop application engineered for researchers working with large-volume behavioral data, such as 24-hour recordings from automated systems like **ToxMate**. It provides a massively accelerated, end-to-end workflow to take you from raw, multi-hour videos to final in a fraction of the time.
+**EthoGrid_ToxMate** is a specialized, high-performance desktop application engineered for researchers working with large-volume behavioral data, such as 24-hour recordings from automated systems like **ToxMate**. It provides a massively accelerated, end-to-end workflow to take you from raw, multi-hour videos to final in a fraction of the time.
 
-Every stage of the EthoGrid-ToxMate pipeline is designed to be **transparent, customizable, and efficient**, giving you full scientific control over your high-throughput data.
+Every stage of the EthoGrid_ToxMate pipeline is designed to be **transparent, customizable, and efficient**, giving you full scientific control over your high-throughput data.
 
 <p align="center">
-  <img src="https://github.com/yousaf2018/EthoGrid-Toxmate/blob/main/APP/images/logo.png" alt="EthoGrid-ToxMate Logo" width="200">
+  <img src="https://github.com/yousaf2018/EthoGrid_ToxMate/blob/main/APP/images/logo.png" alt="EthoGrid_ToxMate Logo" width="200">
 </p>
 
-![Tool Overview](https://github.com/yousaf2018/EthoGrid-Toxmate/blob/main/APP/images/EthoGridGUI.png)
-*A snapshot of the EthoGrid-ToxMate interface showing a video with an overlaid grid, detections with centroids, a behavior legend, and a multi-tank timeline.*
+![Tool Overview](https://github.com/yousaf2018/EthoGrid_ToxMate/blob/main/APP/images/EthoGridGUI.png)
+*A snapshot of the EthoGrid_ToxMate interface showing a video with an overlaid grid, detections with centroids, a behavior legend, and a multi-tank timeline.*
 
 ---
 
 
-## The EthoGrid-ToxMate Philosophy: Speed and Control for Big Data
+## The EthoGrid_ToxMate Philosophy: Speed and Control for Big Data
 
-Designed specifically to address the challenges of long-duration recordings, EthoGrid-ToxMate eliminates the bottlenecks of traditional analysis. It provides a single, unified platform optimized for speed:
+Designed specifically to address the challenges of long-duration recordings, EthoGrid_ToxMate eliminates the bottlenecks of traditional analysis. It provides a single, unified platform optimized for speed:
 
 1.  **High-Speed Video Preparation**: Automatically split massive 24-hour recordings into manageable 1-hour chunks with a single click, preserving original quality without slow re-encoding.
 2.  **GPU-Accelerated AI Tracking**: Run high-performance YOLO models using an optimized process that maximizes GPU utilization, generating tracking data at high speeds.
@@ -127,6 +127,7 @@ This application was developed in the **[Laboratory of Professor Chung-Der Hsiao
 
 
 Distributed under the MIT License. See the `LICENSE` file for more information.
+
 
 
 
