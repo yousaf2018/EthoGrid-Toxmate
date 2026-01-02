@@ -65,25 +65,6 @@ This workflow demonstrates how to go from a raw video to a final statistical gra
 4.  **Batch Process**: Use **🚀 Batch Annotation...** to apply your saved `grid.json` to all your video segments and their `_detections.csv` files. This will generate the final, clean `_with_tanks.csv` files.
 ---
 
-
-### Download Sample Files
-
-To test the full functionality immediately, download this complete set of sample files. It's recommended to place them all in the same folder for easy access.
-
--   **Sample YOLOv11 Detection Model (`.pt` file):**
-    -   *This is required for the "YOLO detection model for betta fish" feature.*
-    -   **[Download Detection Model](https://drive.google.com/file/d/17WDbQ72Rn-DFkIKcp7ECL0ZfPHE84oGV/view?usp=sharing)**
--   **Sample Raw Video (`.mp4` file):**
-    -   *This is the video you will analyze.*
-    -   **[Download Sample Video](https://drive.google.com/file/d/1ImicvjG2tSUdRys2nu_XtJ7B9jcZpnaI/view?usp=sharing)**
--   **Pre-Generated Detection CSV (for Annotation Testing):**
-    -   *Use this to skip inference and go directly to grid annotation.*
-    -   **[Download Detection CSV](https://drive.google.com/file/d/1nhEFKvDwPQzx4OWcioKXqTdT5EgD98eg/view?usp=sharing)**
--   **Pre-Configured Grid Settings File (for Annotation Testing):**
-    -   *Use this to instantly align the grid with the sample video.*
-    -   **[Download Grid Settings .json](https://drive.google.com/file/d/1nPepLlHvBuyjzYqWehX1lnBLRMe-rEAW/view?usp=sharing)**
-
----
 ## Installation Guide 
 
 If you wish to run or modify the tool from source code:
@@ -152,6 +133,7 @@ This application was developed in the **[Laboratory of Professor Chung-Der Hsiao
 
 
 Distributed under the MIT License. See the `LICENSE` file for more information.
+
 
 
 
