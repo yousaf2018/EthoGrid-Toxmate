@@ -76,15 +76,6 @@ This workflow demonstrates how to go from a raw video to a final statistical gra
 3.  **Annotate Data**: In the main window, **🎬 Load** a sample video and the corresponding `_segmentations.csv`. Interactively create and align the grid, then **💾 Save Settings** to a `grid.json` file.
 4.  **Batch Process**: Use **🚀 Batch Annotation...** to apply your saved `grid.json` to all your video segments and their `_segmentations.csv` files. This will generate the final, clean `_with_tanks.csv` files.
 ---
-## Documentation
-
-For a deeper dive into the application's architecture and methods, please see the following guides:
-
--   **[Developer's Guide & Code Architecture](DEVELOPER_GUIDE.md)**: A comprehensive overview of the project structure, class responsibilities, and data flow. Essential reading for anyone looking to modify or contribute to the codebase.
--   **[Statistical Analysis Guide](STATISTICAL_ANALYSIS_GUIDE.md)**: A detailed explanation of every statistical test and calculation performed by the analysis module, including the formulas used and their scientific purpose.
-
----
-
 ## Output Files
 
 1.  **From AI Inference**:
@@ -127,6 +118,7 @@ This application was developed in the **[Laboratory of Professor Chung-Der Hsiao
 
 
 Distributed under the MIT License. See the `LICENSE` file for more information.
+
 
 
 
