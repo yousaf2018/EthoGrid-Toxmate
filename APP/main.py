@@ -32,7 +32,7 @@ def create_rounded_pixmap(source_pixmap):
     
     painter = QtGui.QPainter(mask)
     painter.setBrush(QtCore.Qt.black)
-    painter.drawRoundedRect(0, 0, size.width(), size.height(), 99, 99)
+    painter.drawRoundedRect(0, 0, size.width(), size.height(), 50, 50)
     painter.end()
     
     source_pixmap.setMask(mask)

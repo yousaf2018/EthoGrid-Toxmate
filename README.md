@@ -64,6 +64,52 @@ This workflow demonstrates how to go from a raw video to a final statistical gra
 3.  **Annotate Data**: In the main window, **🎬 Load** a sample video and the corresponding `_detections.csv`. Interactively create and align the grid, then **💾 Save Settings** to a `grid.json` file.
 4.  **Batch Process**: Use **🚀 Batch Annotation...** to apply your saved `grid.json` to all your video segments and their `_detections.csv` files. This will generate the final, clean `_with_tanks.csv` files.
 ---
+
+
+### Download Sample Files
+
+To test the full functionality immediately, download this complete set of sample files. It's recommended to place them all in the same folder for easy access.
+
+-   **Sample YOLOv11 Detection Model (`.pt` file):**
+    -   *This is required for the "YOLO detection model for betta fish" feature.*
+    -   **[Download Detection Model](https://drive.google.com/file/d/17WDbQ72Rn-DFkIKcp7ECL0ZfPHE84oGV/view?usp=sharing)**
+-   **Sample Raw Video (`.mp4` file):**
+    -   *This is the video you will analyze.*
+    -   **[Download Sample Video](https://drive.google.com/file/d/1ImicvjG2tSUdRys2nu_XtJ7B9jcZpnaI/view?usp=sharing)**
+-   **Pre-Generated Detection CSV (for Annotation Testing):**
+    -   *Use this to skip inference and go directly to grid annotation.*
+    -   **[Download Detection CSV](https://drive.google.com/file/d/1nhEFKvDwPQzx4OWcioKXqTdT5EgD98eg/view?usp=sharing)**
+-   **Pre-Configured Grid Settings File (for Annotation Testing):**
+    -   *Use this to instantly align the grid with the sample video.*
+    -   **[Download Grid Settings .json](https://drive.google.com/file/d/1nPepLlHvBuyjzYqWehX1lnBLRMe-rEAW/view?usp=sharing)**
+
+---
+## Installation Guide 
+
+If you wish to run or modify the tool from source code:
+
+1.  **Prerequisites**: Python 3.8+, Git.
+2.  **Setup**:
+    ```bash
+    # Clone the repository
+
+    For Linux 
+    sudo apt update
+    sudo apt install git-lfs
+    git lfs install
+    
+    For Windows 
+    git lfs install
+
+    git clone https://github.com/yousaf2018/EthoGrid_Toxmate.git
+    cd EthoGrid_Toxmate/APP
+    git lfs pull
+    python install_app.py
+
+    # Run the application
+    python main.py
+    ```
+
 ## Output Files
 
 1.  **From AI Inference**:

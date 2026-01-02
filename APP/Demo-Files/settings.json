@@ -1,0 +1,18 @@
+{
+    "video_dimensions": {
+        "width": 1080,
+        "height": 1440
+    },
+    "grid_settings": {
+        "cols": 4,
+        "rows": 4
+    },
+    "line_thickness": 2,
+    "grid_transform": {
+        "center_x": 0.5,
+        "center_y": 0.5250836120401338,
+        "angle": 0.0,
+        "scale_x": 0.92,
+        "scale_y": 0.75
+    }
+}
