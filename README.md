@@ -29,18 +29,6 @@ Designed specifically to address the challenges of long-duration recordings, Eth
 
 ---
 
-## Table of Contents
-- [Key Features](#key-features)
-- [Standalone Utilities](#standalone-utilities)
-- [The Complete Workflow](#the-complete-workflow-a-step-by-step-guide)
-- [Documentation](#documentation)
-- [Output Files](#output-files)
-- [Getting Started for Users](#getting-started-for-users)
-- [For Developers](#for-developers)
-- [Contributing](#contributing)
-- [License](#license)
-
----
 
 ## Key Features
 
@@ -118,6 +106,7 @@ This application was developed in the **[Laboratory of Professor Chung-Der Hsiao
 
 
 Distributed under the MIT License. See the `LICENSE` file for more information.
+
 
 
 
