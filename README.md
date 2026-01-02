@@ -12,6 +12,7 @@ Every stage of the EthoGrid_ToxMate pipeline is designed to be **transparent, cu
 <p align="center">
   <img src="https://github.com/yousaf2018/EthoGrid_Toxmate/blob/main/APP/images/logo.png" alt="EthoGrid_ToxMate Logo" width="200">
 </p>
+
 ![Tool Overview](https://github.com/yousaf2018/EthoGrid_ToxMate/blob/main/APP/images/EthoGridGUI.png)
 *A snapshot of the EthoGrid_ToxMate interface showing a video with an overlaid grid, detections with centroids, a behavior legend, and a multi-tank timeline.*
 
@@ -138,6 +139,7 @@ This application was developed in the **[Laboratory of Professor Chung-Der Hsiao
 
 
 Distributed under the MIT License. See the `LICENSE` file for more information.
+
 
 
 
